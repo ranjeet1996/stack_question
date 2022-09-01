@@ -48,33 +48,33 @@ class Queue {
 
 public class QueueArray {
     public static void main(String[] args) {
-           Deque<Integer> q=new ArrayDeque<>();
-           q.offer(10);
-           q.offer(20);
-           q.offer(30);
-           q.poll();
-           q.peek();
-           q.size();
-           q.isEmpty();
-           System.out.println(q);
-           System.out.println(q.peek());
-           System.out.println(q.size());
-           System.out.print( q.isEmpty());
+        //    Deque<Integer> q=new ArrayDeque<>();
+        //    q.offer(10);
+        //    q.offer(20);
+        //    q.offer(30);
+        //    q.poll();
+        //    q.peek();
+        //    q.size();
+        //    q.isEmpty();
+        //    System.out.println(q);
+        //    System.out.println(q.peek());
+        //    System.out.println(q.size());
+        //    System.out.print( q.isEmpty());
 
 
         
-        
-        //        q.enqueue(10);
-        //        q.enqueue(20);
-        //        q.enqueue(30);
-        //        q.enqueue(40); // queue is full
-        //        System.out.println(q.peek()); //10
-        //        q.dequeue(); // 10
-        //        System.out.println(q.peek()); //20
-        //        q.dequeue(); // 20
-        //        q.dequeue(); // 30
-        //        q.dequeue(); // queue is empty
-        //        System.out.println(q.peek()); //-1
+        Queue q=new Queue(4);
+               q.enqueue(10);
+               q.enqueue(20);
+               q.enqueue(30);
+               q.enqueue(40); // queue is full
+               System.out.println(q.peek()); //10
+               q.dequeue(); // 10
+               System.out.println(q.peek()); //20
+               q.dequeue(); // 20
+               q.dequeue(); // 30
+               q.dequeue(); // queue is empty
+               System.out.println(q.peek()); //-1
             }
 
     

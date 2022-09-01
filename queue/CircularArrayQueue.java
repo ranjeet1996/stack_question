@@ -8,6 +8,7 @@ class CircularArray{
         this.n=n;
         arr=new int[n];
     }
+
     void enqueue(int data){
         if((rear+1)%n==front){
             System.out.println("queue is full");
@@ -37,8 +38,8 @@ class CircularArray{
             System.out.println(arr[front]);
         }
     }
-}
 
+}
 public class CircularArrayQueue {
     public static void main(String[] args) {
                CircularArray cq = new CircularArray(1);

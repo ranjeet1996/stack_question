@@ -22,6 +22,18 @@ public class StackussingTwoqueue {
           return  q1.pop();
         }
 
+        
+    }
+    public static void main(String[] args) {
+            Deque<Integer> d=new ArrayDeque<>();
+            d.offer(1);
+            d.offer(2);
+            d.offer(3);
+            System.out.println(d.pop());
+            System.out.println(d.peek());
+             System.out.println(d);
+             d.push(10);
+             System.out.println(d);       
     }
     
 }

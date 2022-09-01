@@ -19,11 +19,7 @@ public class stockSpan2 {
                 ans.add(i-st.peek());
             }
             st.push(i);
-          }
-          
-        System.out.print(ans+" ");
-        
-        
-
+        }
+         System.out.print(ans+" ");
     }
 }
