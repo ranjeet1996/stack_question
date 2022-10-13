@@ -1,4 +1,4 @@
-package BinarySearchTree;
+       package BinarySearchTree;
 
 public class insertNode {
     public static void main(String[] args) {
