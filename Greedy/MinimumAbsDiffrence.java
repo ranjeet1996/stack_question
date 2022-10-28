@@ -1,15 +1,19 @@
 package Greedy;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class MinimumAbsDiffrence {
     public static void main(String[] args) {
         
     }
 
-    public List<List<Integer> MinimumAbsDiffrence(int[] arr){
+    public List<List<Integer>> MinimumAbsDiffrence(int[] arr){
 
         Arrays.sort(arr);
 
-        List<List<Integer> result=new ArrayList<>();
+        List<List<Integer>>result=new ArrayList<>();
 
         int min_diff=Integer.MAX_VALUE;
         for(int i=1;i<arr.length;i++){

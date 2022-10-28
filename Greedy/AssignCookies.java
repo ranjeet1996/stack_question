@@ -1,5 +1,7 @@
 package Greedy;
 
+import java.util.Arrays;
+
 public class AssignCookies {
     public static void main(String[] args) {
         

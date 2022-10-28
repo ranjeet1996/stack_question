@@ -1,6 +1,7 @@
 package Tree.view;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class printLeftview {
     public static void main(String[] args) {
@@ -34,16 +35,16 @@ public class printLeftview {
     }
 
     //leetcode solution
-    void printrightviewutil(TreeNode curr,List<Integer> list,int level){
+    void printrightviewutil(Node curr,List<Integer> list,int level){
         if(curr==null) return;
               if(level == list.size()) {
-            list.add(curr.val);
+            list.add(curr.data);
         }
             printrightviewutil(curr.right, list, level+1);
             printrightviewutil(curr.left, list, level+1);
         
     }
-    public List<Integer> rightSideView(TreeNode root) {
+    public List<Integer> rightSideView(Node root) {
          List<Integer> result=new ArrayList<Integer>();
         printrightviewutil(root,result,0);
            return result;

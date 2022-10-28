@@ -23,25 +23,27 @@ public class SurroundedRegion {
     }
 
     public void solve(char[][] board) {
-        int rowcount=board.length;
-        int columncount=board[0].length;
+        int rowCount = board.length;
+        int columnCount = board[0].length;
 
-        if(rowcount<=2 || columncount<=2) {
+        if (rowCount <= 2 || columnCount <= 2) {
             return;
-        } 
-             //first row and last row
-        for(int i=0;i<columncount;i++){
-            if(board[0][i]=='0') {
-                solvehelper(board,0,i);  //dfs
-            }
-            if(board[rowcount-1][i]=='0') {
-                solvehelper(board,rowcount-1,i); //dfs
-            }
-        }   
-        
-         //first column and last column
+        }
 
-         for (int i = 1; i < rowCount - 1; i++) {
+        //first row and last row
+        for (int i = 0; i < columnCount; i++) {
+            if (board[0][i] == 'O') {
+                //dfs
+                solveHelper(board, 0, i);
+            }
+            if (board[rowCount - 1][i] == 'O') {
+                //dfs
+                solveHelper(board, rowCount - 1, i);
+            }
+        }
+
+        //first column and last column
+        for (int i = 1; i < rowCount - 1; i++) {
             if (board[i][0] == 'O') {
                 //dfs
                 solveHelper(board, i, 0);
@@ -63,9 +65,5 @@ public class SurroundedRegion {
                 }
             }
         }
-
-
-        
-    }
-    
+    }  
 }

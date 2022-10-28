@@ -1,5 +1,8 @@
 package Graph;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class BFS {
     public static void main(String[] args) {
         
@@ -10,7 +13,7 @@ public class BFS {
         ArrayList<Integer> res = new ArrayList<>();
         
         boolean vis[] = new boolean[V+1];
-        queue<Integer> q= new LinkedList<>();
+        LinkedList<Integer> q= new LinkedList<>();
 
         q.add(0);
         vis[0]=true;
@@ -27,6 +30,5 @@ public class BFS {
             }
         }
         return res;
-    }
-    
+    }   
 }

@@ -1,6 +1,7 @@
 package Graph;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
 class Pair implements Comparable<Pair>{
@@ -10,17 +11,22 @@ class Pair implements Comparable<Pair>{
         this.v=v;
         this.wt=wt;
     }
-    public int Comparable(pair that){
+    // public int Comparable(pair that){
+    //     return this.wt-that.wt;
+    // }
+    @Override
+    public int compareTo(Pair that) {
+        // TODO Auto-generated method stub
         return this.wt-that.wt;
     }
 }
 
-public class dijkstra'sAlgo(SingleSourceShortestPath) {
+public class dijkstrasAlgoSingleSourceShortestPath {
     public static void main(String[] args) {
         
     }
 
-    static int[] dijkstra(int V,ArrayList<ArrayList<ArrayList<Integer>>> adj) {
+    static int[] dijkstra(int V,ArrayList<ArrayList<ArrayList<Integer>>> adj,int S) {
         boolean[] vis=new boolean[V];
         PriorityQueue<Pair> q=new PriorityQueue<>();
 
@@ -38,7 +44,7 @@ public class dijkstra'sAlgo(SingleSourceShortestPath) {
 
             vis[u] =true;
 
-            ArrayList<ArrayList<Integer> neighbors = adj.get(u);
+            ArrayList<ArrayList<Integer>> neighbors = adj.get(u);
             for(ArrayList<Integer> list: neighbors){
                 int vertex=list.get(0);
                 int wt=list.get(1);

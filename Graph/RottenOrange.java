@@ -1,11 +1,14 @@
 package Graph;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 class Pair {
     int row;
     int col;
     int tm;
 
-    Coordinates(int row, int col,int tm) {
+    Pair(int row, int col,int tm) {
       this.row=row;
       this.col=col;
       this.tm=tm;

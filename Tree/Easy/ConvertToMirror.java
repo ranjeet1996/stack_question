@@ -12,7 +12,7 @@ public class ConvertToMirror {
 
         swap(root);
 
-
+        
     }
     private static void swap(Node root) {
         if(root==null) return ;

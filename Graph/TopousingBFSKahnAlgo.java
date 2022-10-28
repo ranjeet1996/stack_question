@@ -1,6 +1,10 @@
 package Graph;
 
-public class Topousing(BFS)Kahn'sAlgo {
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class TopousingBFSKahnAlgo {
     public static void main(String[] args) {
         
     }
@@ -10,9 +14,9 @@ public class Topousing(BFS)Kahn'sAlgo {
         int indegree[] = new int [v];
 
         for(ArrayList<Integer> list :adj){
-            For(Integer e: list) {
-                indegree[e]++;
-            }
+            // For(Integer e: list) {
+            //     indegree[e]++;
+            // }
         }
 
         boolean vis[] = new boolean[v];
@@ -20,7 +24,7 @@ public class Topousing(BFS)Kahn'sAlgo {
 
         bfs(adj,v,0,vis,ansList,indegree);
 
-        int ans[] new int[v];
+        int ans[] = new int[v];
         int i=0;
         for(int e:ans) {
             ans[i++] = e;

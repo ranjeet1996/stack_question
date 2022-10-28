@@ -1,6 +1,8 @@
 package Graph;
 
-public class DetectCycle(Undirected) {
+import java.util.ArrayList;
+
+public class DetectCycleUndirected {
     public static void main(String[] args) {
         
     }
@@ -16,7 +18,7 @@ public class DetectCycle(Undirected) {
         return false;
     }
 
-    public boolean dfs(int v,,ArrayList<ArrayList<Integer>> adj,boolean vis[],int parent) {
+    public boolean dfs(int v,ArrayList<ArrayList<Integer>> adj,boolean vis[],int parent) {
         vis[v] = true;
         for(Integer neighbor : adj.get(v)) {
             if(!vis[neighbor]) {

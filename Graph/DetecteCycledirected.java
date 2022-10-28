@@ -1,6 +1,8 @@
 package Graph;
 
-public class DetecteCycle(directed) {
+import java.util.ArrayList;
+
+public class DetecteCycledirected {
     public static void main(String[] args) {
         
     }
@@ -30,6 +32,8 @@ public class DetecteCycle(directed) {
             }
         }
         recS[v] = false;
+        
+        return false;
     }
     
 }
